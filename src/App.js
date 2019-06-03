@@ -1,12 +1,17 @@
-import React, { Component } from "react";
-import "./style.css";
+import React, { Component, Fragment } from "react";
+import "./styles/style.css";
+import Person from "./components/person";
+import Navigation from "./components/Navigation";
+import Social from "./components/Social";
 
 class App extends Component {
   render() {
     return (
-      <div className="main">
-        <h1>Chiranjibi Poudyal</h1>
-      </div>
+      <Fragment>
+        <Person />
+        <Navigation />
+        <Social />
+      </Fragment>
     );
   }
 }

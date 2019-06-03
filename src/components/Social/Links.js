@@ -5,7 +5,7 @@ export default function Links() {
   return (
     <Fragment>
       {socialLinks.map(socialLink => (
-        <a>
+        <a key={socialLink.name}>
           <i className={socialLink.iconClass} />
         </a>
       ))}

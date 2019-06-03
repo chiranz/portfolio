@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { navLinks } from "../../data/constants";
 
 export default function Links() {
+  const [activeNav, setActiveNav] = useState("portfolio");
+  console.log(activeNav);
   return (
     <div>
       <ul>
         {navLinks.map(item => (
-          <li>
-            <a href="#">{item}</a>
+          <li key={item} className={activeNav === item ? "active" : ""}>
+            <a href="#" onClick={() => setActiveNav(item)}>
+              {item}
+            </a>
           </li>
         ))}
       </ul>

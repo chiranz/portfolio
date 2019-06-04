@@ -4,10 +4,10 @@ export const person = {
 };
 
 export const navLinks = [
-  "Portfolio",
-  "Skills",
-  "My cv",
-  "Blog",
-  "Contact",
-  "About"
+  "portfolio",
+  "skills",
+  "my cv",
+  "blog",
+  "contact",
+  "about"
 ];

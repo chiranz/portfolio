@@ -4,7 +4,7 @@ import Content from "./Content";
 
 export default function index() {
   return (
-    <div>
+    <div className="center">
       <Avatar />
       <Content />
     </div>

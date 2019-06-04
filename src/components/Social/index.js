@@ -3,9 +3,9 @@ import Links from "./Links";
 
 export default function index() {
   return (
-    <div>
-      <p>get in touch</p>
+    <nav>
+      <p className="uppercase small pb-1">get in touch</p>
       <Links />
-    </div>
+    </nav>
   );
 }

@@ -39,3 +39,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+#SCSS
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

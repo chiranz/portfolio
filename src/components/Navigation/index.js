@@ -3,8 +3,10 @@ import Links from "./Links";
 
 export default function index() {
   return (
-    <div>
-      <Links />
-    </div>
+    <nav>
+      <div>
+        <Links />
+      </div>
+    </nav>
   );
 }

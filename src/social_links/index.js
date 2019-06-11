@@ -1,12 +1,12 @@
 export const socialLinks = [
   {
     name: "twitter",
-    url: "www.twitter.com/chiranjibipoudy",
+    url: "https://www.twitter.com/chiranjibipoudy",
     iconClass: "fa fa-twitter"
   },
   {
     name: "github",
-    url: "www.github.com/chiranz",
+    url: "https://www.github.com/chiranz",
     iconClass: "fa fa-github"
   },
   {

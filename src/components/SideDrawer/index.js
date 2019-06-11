@@ -1,19 +1,28 @@
-import React from "react";
-import DrawerToggleButton from "./DrawerToggleButton";
-import NavLinks from "../Navigation/Links";
+import React, { Fragment } from "react";
 
-export default function index() {
+import NavLinks from "../Navigation/Links";
+import BackDrop from "../Backdrop";
+
+export default function index(props) {
+  function onClick(e) {
+    e.preventDefault();
+    props.toggleSideDrawer();
+  }
   return (
-    <div>
-      <DrawerToggleButton />
-      <div className="side-drawer">
-        <a href="#" className="btn-close">
+    <Fragment>
+      {props.sideDrawerOpen && (
+        <BackDrop toggleSideDrawer={props.toggleSideDrawer} />
+      )}
+
+      <div className={(props.sideDrawerOpen ? "open " : "") + "side-drawer"}>
+        <button className="btn-close" onClick={e => onClick(e)}>
           &times;
-        </a>
-        <nav style={{ display: "none" }}>
+        </button>
+        <div className="clearfix" />
+        <nav>
           <NavLinks />
         </nav>
       </div>
-    </div>
+    </Fragment>
   );
 }

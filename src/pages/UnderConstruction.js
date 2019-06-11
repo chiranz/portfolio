@@ -6,7 +6,8 @@ const styles = {
   justifyContent: "center",
   alignItems: "center",
   background: "#ddd",
-  width: "100%"
+  width: "100%",
+  height: "100%"
 };
 
 export default function UnderConstruction(props) {

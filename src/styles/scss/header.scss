@@ -1,0 +1,98 @@
+nav {
+  padding: 0.7rem 4rem;
+  z-index: 1;
+  opacity: 0.9;
+  text-transform: uppercase;
+
+  ul > li {
+    a {
+      color: lighten($primary-color, 40%);
+    }
+    a:hover {
+      color: $light-color;
+    }
+    a:active {
+      color: $light-color;
+    }
+  }
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: darken($primary-color, 5%);
+  .social {
+    p {
+      color: darken($light-color, 20%);
+    }
+    .social-links {
+      .text-light:hover {
+        color: darken($light-color, 20%);
+      }
+    }
+  }
+}
+
+// Person image styling
+.avatar {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+  .main {
+    .aside {
+      .person {
+        padding-top: 1rem;
+      }
+      min-width: 20rem;
+      min-height: 100vh;
+      .social {
+        margin-left: 2rem;
+        .hamburger {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .main {
+    .aside {
+      width: 100%;
+      height: auto;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      .navigation {
+        display: none;
+      }
+      .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5rem 0;
+        border-bottom: 1px solid #ddd;
+        p {
+          display: none;
+        }
+        .social-links {
+          margin-right: 1rem;
+        }
+        .hamburger {
+          text-align: center;
+          display: block;
+          margin-left: 0.5rem;
+          margin-top: 0;
+          a {
+            i {
+              color: $light-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

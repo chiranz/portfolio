@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/css/style.css";
-import Landing from "./pages/Landing";
+import Header from "./pages/Header";
 import Routes from "./routes";
 import SideDrawer from "./components/SideDrawer";
+import BackDrop from "./components/Backdrop";
 
 class App extends Component {
   constructor(props) {
@@ -24,13 +25,15 @@ class App extends Component {
       <BrowserRouter>
         <div className="main">
           {this.state.sideDrawerOpen && (
-            <SideDrawer
-              toggleSideDrawer={this.toggleSideDrawer}
-              sideDrawerOpen={this.state.sideDrawerOpen}
-            />
+            <BackDrop toggleSideDrawer={this.toggleSideDrawer} />
           )}
 
-          <Landing toggleSideDrawer={this.toggleSideDrawer} />
+          <SideDrawer
+            toggleSideDrawer={this.toggleSideDrawer}
+            sideDrawerOpen={this.state.sideDrawerOpen}
+          />
+
+          <Header toggleSideDrawer={this.toggleSideDrawer} />
           <Routes />
         </div>
       </BrowserRouter>

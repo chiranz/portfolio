@@ -3,7 +3,7 @@ import Person from "../components/Person";
 import Navigation from "../components/Navigation";
 import Social from "../components/Social";
 
-export default function Landing(props) {
+export default function Header(props) {
   return (
     <Fragment>
       <div className="aside">

@@ -5,7 +5,7 @@ export default function index() {
   return (
     <div className="navigation">
       <nav>
-        <Links />
+        <Links active={"#ffffff"} />
       </nav>
     </div>
   );

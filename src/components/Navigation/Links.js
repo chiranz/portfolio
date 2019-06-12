@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { navLinks } from "../../data/constants";
 import { NavLink } from "react-router-dom";
 
-export default function Links() {
+export default function Links(props) {
   const [activeNav, setActiveNav] = useState("portfolio");
-  console.log(activeNav);
   return (
     <ul>
       {navLinks.map(item => (
@@ -14,7 +13,8 @@ export default function Links() {
             to={item.linkTo}
             onClick={() => setActiveNav(item.name)}
             activeStyle={{
-              color: "white"
+              color: props.active,
+              fontWeight: "bold"
             }}
           >
             {item.name}

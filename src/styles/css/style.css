@@ -207,8 +207,15 @@ nav {
   background-color: #a62b1a; }
   .aside .social p {
     color: #cccccc; }
-  .aside .social .social-links .text-light:hover {
-    color: #cccccc; }
+  .aside .social .social-links {
+    margin-bottom: 0.5rem; }
+    .aside .social .social-links .text-light:hover {
+      background-color: #fff;
+      color: #bc311e; }
+    .aside .social .social-links a {
+      padding: 0.5rem;
+      border-radius: 50%;
+      background-color: #c5331f; }
 
 .avatar {
   height: 12rem;

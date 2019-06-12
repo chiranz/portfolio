@@ -11,7 +11,7 @@ export default function Links() {
           href={socialLink.url}
           target="blank"
         >
-          <i className={socialLink.iconClass + " large"} />
+          <i className={socialLink.iconClass} />
         </a>
       ))}
     </div>

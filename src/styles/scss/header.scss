@@ -28,8 +28,15 @@ nav {
     }
     .social-links {
       .text-light:hover {
-        color: darken($light-color, 20%);
+        background-color: $light-color;
+        color: $primary-color;
       }
+      a {
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: lighten($primary-color, 2%);
+      }
+      margin-bottom: 0.5rem;
     }
   }
 }

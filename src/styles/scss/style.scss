@@ -2,6 +2,7 @@
 @import "backdrop";
 @import "header";
 @import "side_drawer";
+@import "my-cv";
 
 * {
   box-sizing: border-box;
@@ -79,13 +80,13 @@ h2 {
 
 @media (max-width: 899px) {
   .main {
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
   }
 }
 
 @media (min-width: 900px) {
   .main {
-    height: 100vh;
+    min-height: 100vh;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import UnderConstruction from "./UnderConstruction";
+import CV from "../components/CV";
 
 export default function Cv() {
-  return <UnderConstruction pageName="Curriculum Vitae" />;
+  return <CV />;
 }

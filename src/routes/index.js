@@ -1,8 +1,8 @@
 // React
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 // Routing & Links
-import { Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import * as links from "../links";
 
 // Pages
@@ -21,7 +21,7 @@ import About from "../pages/About";
 class Routes extends Component {
   render() {
     return (
-      <Switch>
+      <Fragment>
         <Route exact path={links.homeLink.url} component={Home} />
         <Route exact path={links.blogLink.url} component={Blog} />
         <Route exact path={links.skillsLink.url} component={Skills} />
@@ -30,7 +30,7 @@ class Routes extends Component {
         <Route exact path={links.aboutLink.url} component={About} />
         <Route exact path={links.contactLink.url} component={Contact} />
         {/* <Route render={() => <Error error={errorStrings.notFound} />} /> */}
-      </Switch>
+      </Fragment>
     );
   }
 }

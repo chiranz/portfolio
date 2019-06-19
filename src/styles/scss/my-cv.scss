@@ -44,6 +44,7 @@
     }
     .tech-text {
       color: #000;
+      font-size: 0.9em;
     }
   }
 
@@ -89,6 +90,7 @@
     }
   }
 }
+
 .cv-section:first-child {
   display: flex;
   flex-direction: row !important;
@@ -109,9 +111,11 @@
   }
 }
 .cv-section-sub-title {
-  color: darken($primary-color, 10%);
+  color: darken($muted-color, 20%);
   text-transform: uppercase;
-  margin-bottom: 1em;
+  padding: 0.2em 0.3em;
+  border-radius: 0.1em;
+  background: lighten($muted-color, 20%);
   h3 {
     font-size: 1.2em;
     font-weight: 400;
@@ -164,6 +168,9 @@
 @media (max-width: 768px) {
   .cv-tech-tags {
     justify-content: center;
+  }
+  .cv-timeline {
+    margin-bottom: 1em;
   }
 }
 
@@ -229,11 +236,6 @@
 
 @include mediaMdToXl {
   // CV CONTENT WITHOUT TIMELINE
-  .cv-section-content {
-    ul {
-      margin-left: 11em;
-    }
-  }
   .content-about {
     margin-left: 12em;
   }
@@ -245,6 +247,7 @@
     height: 100%;
     text-align: end;
   }
+
   .cv-timeline-body {
     text-align: start;
     margin: 0 0 0 1em;

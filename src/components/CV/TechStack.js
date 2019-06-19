@@ -7,8 +7,8 @@ export default function TechStack() {
       <div className="cv-section-title">
         <h2>Tech Stack</h2>
       </div>
-      <div className="cv-section-content mb-1">
-        <div className="cv-section-timeline">
+      <div className="cv-section-content ">
+        <div className="cv-timeline">
           <div className="cv-timeline-side">
             <div className="cv-section-sub-title">
               <h3>Skills</h3>
@@ -25,9 +25,8 @@ export default function TechStack() {
           </div>
         </div>
       </div>
-
-      <div className="cv-section-content mb-1">
-        <div className="cv-section-timeline">
+      <div className="cv-section-content ">
+        <div className="cv-timeline">
           <div className="cv-timeline-side">
             <div className="cv-section-sub-title">
               <h3>Comfortable</h3>
@@ -44,8 +43,8 @@ export default function TechStack() {
           </div>
         </div>
       </div>
-      <div className="cv-section-content mb-1">
-        <div className="cv-section-timeline">
+      <div className="cv-section-content ">
+        <div className="cv-timeline">
           <div className="cv-timeline-side">
             <div className="cv-section-sub-title">
               <h3>Learning</h3>

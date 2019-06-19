@@ -1,6 +1,6 @@
 import React from "react";
-import UnderConstruction from "./UnderConstruction";
+import Landing from "./Landing";
 
 export default function Home() {
-  return <UnderConstruction />;
+  return <Landing />;
 }

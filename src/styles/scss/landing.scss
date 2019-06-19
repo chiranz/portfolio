@@ -1,0 +1,55 @@
+.landing-page {
+  background: darken($muted-color, 20%);
+  background-image: url("../../images/bwmulkarka.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 100%;
+}
+.landing-page-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 5em;
+}
+.landing-hero {
+  color: darken($light-color, 10%);
+  p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: $muted-color;
+    strong {
+      color: $light-color;
+    }
+  }
+}
+.landing-action {
+  display: flex;
+  flex-direction: column;
+  a {
+    text-transform: uppercase;
+    color: darken($primary-color, 100%);
+    border: none;
+    background-color: $light-color;
+    margin: 0 0 1.5em 0;
+    padding: 0.7em 1em;
+    font-size: 1em;
+    border-radius: 0.1em;
+    &:hover {
+      background-color: darken($primary-color, 5%);
+      color: $light-color;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .landing-page-inner {
+    margin: 5rem 0;
+    align-items: center;
+    text-align: center;
+  }
+  .landing-hero {
+    margin-bottom: 5rem;
+  }
+}

@@ -506,7 +506,8 @@ nav {
       .cv-page > * li:hover .tech-text {
         color: #ffffff; }
     .cv-page > * li .tech-text {
-      color: #000; }
+      color: #000;
+      font-size: 0.9em; }
   .cv-page > * a {
     text-decoration: none;
     color: #a62b1a; }
@@ -549,9 +550,11 @@ nav {
     font-weight: 400; }
 
 .cv-section-sub-title {
-  color: #902617;
+  color: #8e8e8e;
   text-transform: uppercase;
-  margin-bottom: 1em; }
+  padding: 0.2em 0.3em;
+  border-radius: 0.1em;
+  background: #f4f4f4; }
   .cv-section-sub-title h3 {
     font-size: 1.2em;
     font-weight: 400; }
@@ -584,7 +587,10 @@ nav {
 
 @media (max-width: 768px) {
   .cv-tech-tags {
-    justify-content: center; } }
+    justify-content: center; }
+
+  .cv-timeline {
+    margin-bottom: 1em; } }
 @media (max-width: 1023px) {
   .cv-page-inner {
     padding: 1.5em; }
@@ -638,9 +644,6 @@ nav {
     padding-left: 1em;
     border-left: 1px solid #c1c1c1; } }
 @media screen and (min-width: 769px) {
-  .cv-section-content ul {
-    margin-left: 11em; }
-
   .content-about {
     margin-left: 12em; }
 
@@ -670,6 +673,54 @@ nav {
   .contact {
     display: flex;
     flex-direction: column; } }
+.landing-page {
+  background: #8e8e8e;
+  background-image: url("../../images/bwmulkarka.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 100%; }
+
+.landing-page-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 5em; }
+
+.landing-hero {
+  color: #e6e6e6; }
+  .landing-hero p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #c1c1c1; }
+    .landing-hero p strong {
+      color: #fff; }
+
+.landing-action {
+  display: flex;
+  flex-direction: column; }
+  .landing-action a {
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    background-color: #fff;
+    margin: 0 0 1.5em 0;
+    padding: 0.7em 1em;
+    font-size: 1em;
+    border-radius: 0.1em; }
+    .landing-action a:hover {
+      background-color: #a62b1a;
+      color: #fff; }
+
+@media screen and (max-width: 900px) {
+  .landing-page-inner {
+    margin: 5rem 0;
+    align-items: center;
+    text-align: center; }
+
+  .landing-hero {
+    margin-bottom: 5rem; } }
 * {
   box-sizing: border-box;
   margin: 0;

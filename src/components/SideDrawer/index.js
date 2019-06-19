@@ -1,11 +1,16 @@
 import React, { Fragment } from "react";
+import { withRouter } from "react-router-dom";
 
 import NavLinks from "../Navigation/Links";
 
-export default function index(props) {
+function index(props) {
   function onClick(e) {
     e.preventDefault();
     props.toggleSideDrawer();
+  }
+  const { location } = props;
+  if (location.pathname.match("/my-cv")) {
+    return null;
   }
   return (
     <Fragment>
@@ -21,3 +26,5 @@ export default function index(props) {
     </Fragment>
   );
 }
+
+export default withRouter(index);

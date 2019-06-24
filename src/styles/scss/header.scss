@@ -4,15 +4,18 @@ nav {
   opacity: 0.9;
   text-transform: uppercase;
 
-  ul > li {
-    a {
-      color: lighten($primary-color, 40%);
-    }
-    a:hover {
-      color: $light-color;
-    }
-    a:active {
-      color: $light-color;
+  ul {
+    li {
+      margin: 0.7rem 0;
+      a {
+        color: lighten($primary-color, 40%);
+      }
+      a:hover {
+        color: $light-color;
+      }
+      a:active {
+        color: $light-color;
+      }
     }
   }
 }
@@ -50,12 +53,16 @@ nav {
 
 @media (min-width: 900px) {
   .main {
+    .transparent {
+      background-color: rgba(darken($primary-color, 5%), 0.7);
+    }
     .aside {
+      position: fixed;
       .person {
-        padding-top: 1rem;
+        padding: 1rem 0;
       }
       min-width: 20rem;
-      min-height: 100vh;
+      height: 100vh;
       .social {
         margin-left: 2rem;
         .hamburger {
@@ -76,11 +83,14 @@ nav {
       .navigation {
         display: none;
       }
+      .person {
+        padding: 2rem 0;
+      }
       .social {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0.5rem 0;
+        padding: 0.5rem 0;
         border-bottom: 1px solid #ddd;
         p {
           display: none;

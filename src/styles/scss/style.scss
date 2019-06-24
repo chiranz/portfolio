@@ -4,6 +4,10 @@
 @import "side_drawer";
 @import "my-cv";
 @import "landing";
+@import "page_outline";
+@import "portfolio_page";
+@import "techtag";
+@import "buttons";
 
 * {
   box-sizing: border-box;
@@ -11,8 +15,6 @@
   padding: 0;
 }
 html {
-  // background: url("../../images/kiyah-mitchell-1181741-unsplash.jpg") no-repeat
-  // center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

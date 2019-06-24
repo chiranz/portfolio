@@ -1,0 +1,22 @@
+.btn {
+  text-decoration: none;
+  margin: 0;
+  padding: 0.7rem 2rem;
+  border-radius: 0.3rem;
+
+  &-primary {
+    background-color: darken($primary-color, 5%);
+    color: $light-color;
+    &:hover {
+      background-color: $primary-color;
+      color: darken($light-color, 5%);
+    }
+  }
+  &-secondary {
+    border: 1px solid $primary-color;
+    margin-left: 2rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

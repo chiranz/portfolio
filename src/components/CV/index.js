@@ -14,6 +14,7 @@ export default function index() {
         <Projects />
         <TechStack />
         <Education />
+        <About />
       </div>
     </div>
   );

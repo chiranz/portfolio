@@ -1,6 +1,11 @@
 import React from "react";
 import UnderConstruction from "./UnderConstruction";
+import PageOutline from "../components/PageOutline";
 
 export default function Contact() {
-  return <UnderConstruction pageName="Contact Page" />;
+  return (
+    <PageOutline>
+      <UnderConstruction pageName="Contact Page" />
+    </PageOutline>
+  );
 }

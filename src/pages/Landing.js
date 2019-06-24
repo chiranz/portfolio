@@ -8,7 +8,7 @@ export default function Landing() {
         <div className="landing-hero">
           <h1>Hi I'am Chiranjibi,</h1>
           <p>
-            a freelance developer specialized in
+            a freelance web developer specialized in
             <br />
             <strong>front-end and back-end development.</strong>
           </p>

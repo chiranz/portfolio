@@ -1,0 +1,12 @@
+.outline {
+  width: 100%;
+  max-width: 55rem;
+  min-height: 100vh;
+  padding: 3.5rem 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .outline {
+    margin-left: 20rem;
+  }
+}

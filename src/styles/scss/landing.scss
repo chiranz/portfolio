@@ -1,6 +1,6 @@
 .landing-page {
-  background: darken($muted-color, 20%);
   background-image: url("../../images/bwmulkarka.jpg");
+  background-color: darken($muted-color, 10%);
   background-size: cover;
   background-blend-mode: multiply;
   width: 100%;
@@ -9,16 +9,16 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  margin-left: 5em;
+  padding: 5em 0 3em 25em;
 }
 .landing-hero {
-  color: darken($light-color, 10%);
+  color: $light-color;
   p {
     font-size: 1.5em;
     font-weight: 500;
-    color: $muted-color;
+    color: lighten($muted-color, 10%);
     strong {
       color: $light-color;
     }
@@ -45,6 +45,7 @@
 
 @media screen and (max-width: 900px) {
   .landing-page-inner {
+    padding: 0;
     margin: 5rem 0;
     align-items: center;
     text-align: center;

@@ -1,3 +1,7 @@
+import ecommimg from "../images/ecomm.png";
+import blogimg from "../images/blog.svg";
+import portfolioimg from "../images/portfolio.png";
+
 export const person = {
   name: "Chiranjibi Poudyal",
   profession: "Full-stack developer",
@@ -17,7 +21,6 @@ export const person = {
 
 export const navLinks = [
   { name: "portfolio", linkTo: "/portfolio" },
-  { name: "skills", linkTo: "/skills" },
   { name: "my cv", linkTo: "/my-cv" },
   { name: "blog", linkTo: "/blog" },
   { name: "contact", linkTo: "/contact" },
@@ -57,7 +60,8 @@ export const projects = [
     work on frontend development.`,
     liveLink: "https://www.chiranjibipoudyal.com/",
     repoLink: "https://github.com/chiranz/portfolio",
-    usedTech: ["React", "Html", "css", "scss"]
+    usedTech: ["React", "Html", "css", "scss"],
+    img: portfolioimg
   },
   {
     title: "Blogging Site",
@@ -65,7 +69,8 @@ export const projects = [
     using google and github account. Here media files are served from AWS-S3.`,
     liveLink: "https://dev-djblog.herokuapp.com/",
     repoLink: "https://www.github.com/chiranz/djblog",
-    usedTech: ["django", "html", "css", "bootstrap", "social-auth", "aws-s3"]
+    usedTech: ["django", "html", "css", "bootstrap", "social-auth", "aws-s3"],
+    img: blogimg
   },
   {
     title: "Electronics Store",
@@ -73,7 +78,8 @@ export const projects = [
     and checkout using paypal sandbox.`,
     liveLink: "https://reactestore.netlify.com",
     repoLink: "https://www.github.com/chiranz/react-Estore",
-    usedTech: ["React", "html", "css"]
+    usedTech: ["React", "html", "css"],
+    img: ecommimg
   }
 ];
 

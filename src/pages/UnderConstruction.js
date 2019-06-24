@@ -5,7 +5,6 @@ const styles = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  background: "#ddd",
   maxWidth: "55rem",
   width: "100%",
   height: "100%"

@@ -66,3 +66,7 @@ export const contactLink = {
   url: "/contact",
   documentTitle: `Contact | ${person.name}`
 };
+
+export const formSuccess = {
+  url: "/success"
+};

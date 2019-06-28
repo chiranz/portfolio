@@ -12,6 +12,7 @@ import Cv from "../pages/Cv";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import Notification from "../pages/Notification";
 
 class Routes extends Component {
   render() {
@@ -23,6 +24,7 @@ class Routes extends Component {
         <Route exact path={links.cvLink.url} component={Cv} />
         <Route exact path={links.aboutLink.url} component={About} />
         <Route exact path={links.contactLink.url} component={Contact} />
+        <Route exact path={links.formSuccess.url} component={Notification} />
         {/* <Route render={() => <Error error={errorStrings.notFound} />} /> */}
       </Fragment>
     );

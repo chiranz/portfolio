@@ -1,5 +1,5 @@
 .project-item {
-  margin-bottom: 2rem;
+  margin: 2rem 1rem;
   background-color: lighten($muted-color, 20%);
   padding: 0.7rem 2rem;
   border-radius: 0.5rem;
@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .project-item {
     display: flex;
     flex-direction: column;

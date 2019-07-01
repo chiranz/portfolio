@@ -7,13 +7,13 @@ export default function index() {
       <form
         className="form"
         name="contact"
-        method="POST"
+        method="post"
         action="/success"
-        netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
       >
-        <div class="form-group hidden">
+        <div className="form-group hidden">
           <label>
             Don’t fill this out if you're human:{" "}
             <input type="text" name="bot-field" />

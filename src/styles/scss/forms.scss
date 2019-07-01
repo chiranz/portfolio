@@ -1,11 +1,12 @@
 .contact-form {
   height: 100%;
   background-color: darken($light-color, 5%);
-  padding: 1rem 3rem;
+  margin: 1rem 3rem;
   border-radius: 0.5rem;
   border-top: 0.5rem solid $primary-color;
 }
 .form {
+  padding: 0 1rem;
   &-group {
     margin: 1rem 0;
     button {

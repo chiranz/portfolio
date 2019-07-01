@@ -221,8 +221,8 @@ nav {
       background-color: #c5331f; }
 
 .avatar {
-  height: 12rem;
-  width: 12rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%; }
 
 @media (min-width: 900px) {

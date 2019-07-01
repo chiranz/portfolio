@@ -1,5 +1,5 @@
 import React from "react";
-import MyImage from "../../images/myimgS.jpg";
+import MyImage from "../../images/myimg.png";
 import { person, personContact } from "../../data/constants";
 
 export default function Header() {

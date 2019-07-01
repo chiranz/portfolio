@@ -1,11 +1,11 @@
 import React from "react";
 import PageOutline from "../components/PageOutline";
-import ContactForm from "../components/Forms";
+import ContactCard from "../components/ContactCard";
 
 export default function Contact() {
   return (
     <PageOutline>
-      <ContactForm />
+      <ContactCard />
     </PageOutline>
   );
 }

@@ -903,6 +903,23 @@ nav {
     width: 16px;
     height: 16px;
     transform: translate3d(0, -16px, 0); } }
+.contact-card {
+  margin: 3rem 0 0 5rem; }
+  .contact-card .vcard {
+    overflow: hidden; }
+    .contact-card .vcard dt {
+      display: block;
+      clear: both;
+      float: left;
+      width: 150px; }
+    .contact-card .vcard dd {
+      margin-left: 2rem; }
+
+@media screen and (max-width: 500px) {
+  .contact-card {
+    margin: 3rem 0 0 1rem; }
+    .contact-card .vcard dt {
+      width: 120px; } }
 * {
   box-sizing: border-box;
   margin: 0;

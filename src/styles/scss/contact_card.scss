@@ -1,0 +1,27 @@
+.contact-card {
+  margin: 3rem 0 0 5rem;
+
+  .vcard {
+    overflow: hidden;
+    dt {
+      display: block;
+      clear: both;
+      float: left;
+      width: 150px;
+    }
+    dd {
+      margin-left: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-card {
+    margin: 3rem 0 0 1rem;
+    .vcard {
+      dt {
+        width: 120px;
+      }
+    }
+  }
+}

@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import { navLinks } from "../../data/constants";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { navLinks } from "../../data/constants";
+import { closeSideDrawer } from "../../actions";
 
-export default function Links(props) {
+function Links(props) {
   const [activeNav, setActiveNav] = useState("portfolio");
-  function handleClick(e, item) {
+  function handleClick(item) {
     setActiveNav(item);
+    if (props.isSideDrawerOpen) {
+      props.closeSideDrawer();
+    }
   }
   return (
     <ul>
@@ -27,3 +33,16 @@ export default function Links(props) {
     </ul>
   );
 }
+
+Links.propTypes = {
+  isSideDrawerOpen: PropTypes.bool.isRequired
+};
+
+const mapStateToProps = state => ({
+  isSideDrawerOpen: state.isSideDrawerOpen
+});
+
+export default connect(
+  mapStateToProps,
+  { closeSideDrawer }
+)(Links);

@@ -15,7 +15,7 @@ function Header(props) {
       <div className={classes}>
         <Person />
         <Navigation />
-        <Social toggleSideDrawer={props.toggleSideDrawer} />
+        <Social />
       </div>
     </Fragment>
   );

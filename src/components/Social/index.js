@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import Links from "./Links";
+import { openSideDrawer } from "../../actions";
 
-export default function index(props) {
+function index(props) {
   function onClick(e) {
     e.preventDefault();
-    props.toggleSideDrawer();
+    props.openSideDrawer();
   }
   return (
     <div className="social">
@@ -20,5 +22,10 @@ export default function index(props) {
   );
 }
 index.propTypes = {
-  toggleSideDrawer: PropTypes.func.isRequired
+  openSideDrawer: PropTypes.func.isRequired
 };
+
+export default connect(
+  null,
+  { openSideDrawer }
+)(index);

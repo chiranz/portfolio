@@ -1,12 +1,15 @@
 import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
+import { connect } from "react-redux";
 import Person from "../Person";
 import NavLinks from "../Navigation/Links";
+import { closeSideDrawer } from "../../actions";
 
 function index(props) {
   function onClick(e) {
     e.preventDefault();
-    props.toggleSideDrawer();
+    props.closeSideDrawer();
   }
   const { location } = props;
   if (location.pathname.match("/my-cv")) {
@@ -14,7 +17,7 @@ function index(props) {
   }
   return (
     <Fragment>
-      <div className={(props.sideDrawerOpen ? "open " : "") + "side-drawer"}>
+      <div className={(props.isSideDrawerOpen ? "open " : "") + "side-drawer"}>
         <button className="btn-close" onClick={e => onClick(e)}>
           &times;
         </button>
@@ -28,5 +31,18 @@ function index(props) {
     </Fragment>
   );
 }
+index.propTypes = {
+  isSideDrawerOpen: PropTypes.bool.isRequired,
+  closeSideDrawer: PropTypes.func.isRequired
+};
 
-export default withRouter(index);
+const mapStateToProps = state => ({
+  isSideDrawerOpen: state.isSideDrawerOpen
+});
+
+export default withRouter(
+  connect(
+    mapStateToProps,
+    { closeSideDrawer }
+  )(index)
+);

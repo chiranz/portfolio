@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Links(props) {
   const [activeNav, setActiveNav] = useState("portfolio");
+  function handleClick(e, item) {
+    setActiveNav(item);
+  }
   return (
     <ul>
       {navLinks.map(item => (
@@ -11,7 +14,7 @@ export default function Links(props) {
           <NavLink
             style={{ textDecoration: "none" }}
             to={item.linkTo}
-            onClick={() => setActiveNav(item.name)}
+            onClick={() => handleClick(item.name)}
             activeStyle={{
               color: props.active,
               fontWeight: "bold"

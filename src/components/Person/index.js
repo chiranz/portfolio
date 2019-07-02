@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import Avatar from "./Avatar";
 import Content from "./Content";
 
-export default function index() {
+export default function index(props) {
   return (
     <div className="center person">
       <Link style={{ textDecoration: "none" }} to="/">
-        <Avatar />
-        <Content />
+        <Avatar small={props.small} />
+        <Content small={props.small} />
       </Link>
     </div>
   );

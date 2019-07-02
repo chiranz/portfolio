@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { withRouter } from "react-router-dom";
-
+import Person from "../Person";
 import NavLinks from "../Navigation/Links";
 
 function index(props) {
@@ -19,8 +19,10 @@ function index(props) {
           &times;
         </button>
         <div className="clearfix" />
+        <Person small="true" />
+
         <nav>
-          <NavLinks active={"#bc311e"} />
+          <NavLinks active={"#fff"} />
         </nav>
       </div>
     </Fragment>

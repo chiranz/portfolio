@@ -2,7 +2,7 @@
 import React, { Component, Fragment } from "react";
 
 // Routing & Links
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import * as links from "../links";
 
 // Pages
@@ -13,19 +13,22 @@ import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Notification from "../pages/Notification";
+import Error404 from "../pages/Error404";
 
 class Routes extends Component {
   render() {
     return (
       <Fragment>
-        <Route exact path={links.homeLink.url} component={Home} />
-        <Route exact path={links.blogLink.url} component={Blog} />
-        <Route exact path={links.projectsLink.url} component={Portfolio} />
-        <Route exact path={links.cvLink.url} component={Cv} />
-        <Route exact path={links.aboutLink.url} component={About} />
-        <Route exact path={links.contactLink.url} component={Contact} />
-        <Route exact path={links.formSuccess.url} component={Notification} />
-        {/* <Route render={() => <Error error={errorStrings.notFound} />} /> */}
+        <Switch>
+          <Route exact path={links.homeLink.url} component={Home} />
+          <Route exact path={links.blogLink.url} component={Blog} />
+          <Route exact path={links.projectsLink.url} component={Portfolio} />
+          <Route exact path={links.cvLink.url} component={Cv} />
+          <Route exact path={links.aboutLink.url} component={About} />
+          <Route exact path={links.contactLink.url} component={Contact} />
+          <Route exact path={links.formSuccess.url} component={Notification} />
+          <Route path="*" component={Error404} />
+        </Switch>
       </Fragment>
     );
   }

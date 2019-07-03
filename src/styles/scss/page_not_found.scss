@@ -1,0 +1,29 @@
+.not__found-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  h1 {
+    font-family: "Monoton", cursive;
+    font-size: 8rem;
+    color: lighten($primary-color, 20%);
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  a {
+    padding: 0.7rem 2rem;
+    background-color: $primary-color;
+    border-radius: 0.5rem;
+    color: $light-color;
+    i {
+      margin-right: 0.5rem;
+    }
+    &:hover {
+      border: 1px solid $primary-color;
+      background-color: $light-color;
+      color: $primary-color;
+    }
+  }
+}

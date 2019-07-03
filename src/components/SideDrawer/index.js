@@ -24,7 +24,7 @@ function index(props) {
         <div className="clearfix" />
         <Person small="true" />
 
-        <nav>
+        <nav className="side-nav">
           <NavLinks active={"#fff"} />
         </nav>
       </div>

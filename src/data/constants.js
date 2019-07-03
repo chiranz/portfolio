@@ -20,11 +20,11 @@ export const person = {
 };
 
 export const navLinks = [
-  { name: "portfolio", linkTo: "/portfolio" },
-  { name: "my cv", linkTo: "/my-cv" },
-  { name: "blog", linkTo: "/blog" },
-  { name: "contact", linkTo: "/contact" },
-  { name: "about", linkTo: "/about" }
+  { name: "portfolio", linkTo: "/portfolio", icon: "fa fa-briefcase" },
+  { name: "my cv", linkTo: "/my-cv", icon: "fa fa-file" },
+  { name: "blog", linkTo: "/blog", icon: "fa fa-rss" },
+  { name: "contact", linkTo: "/contact", icon: "fa fa-address-card" },
+  { name: "about", linkTo: "/about", icon: "fa fa-user" }
 ];
 
 export const footerStrings = {

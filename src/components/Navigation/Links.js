@@ -26,6 +26,7 @@ function Links(props) {
               fontWeight: "bold"
             }}
           >
+            {props.isSideDrawerOpen && <i className={item.icon} />}
             {item.name}
           </NavLink>
         </li>

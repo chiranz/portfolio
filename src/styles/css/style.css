@@ -275,24 +275,45 @@ nav {
   background-color: #bc311e;
   color: #fff;
   position: fixed;
+  opacity: 0.9;
   top: 0;
   left: 0;
   z-index: 20;
   box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.5);
   transform: translateX(-100%);
   transition: transform 0.5s ease-out; }
-  .side-drawer .person .avatar {
-    height: 8rem;
-    width: 8rem; }
-  .side-drawer .person .person-content h1 {
-    font-size: 1.5rem; }
-  .side-drawer .person .person-content h2 {
-    font-size: 1.2rem;
-    color: #cccccc; }
-  .side-drawer nav ul li a {
-    color: #fff; }
-  .side-drawer nav ul li a:hover {
-    font-weight: bold; }
+  .side-drawer .person {
+    margin: 1rem 0; }
+    .side-drawer .person .avatar {
+      height: 8rem;
+      width: 8rem; }
+    .side-drawer .person .person-content h1 {
+      font-size: 1.5rem; }
+    .side-drawer .person .person-content h2 {
+      font-size: 1.2rem;
+      color: #cccccc; }
+  .side-drawer .side-nav {
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0;
+    border-top: #fff; }
+    .side-drawer .side-nav ul {
+      width: 100%; }
+      .side-drawer .side-nav ul li {
+        width: 100%;
+        padding: 0.5rem 0 0.5rem 0;
+        margin: 0; }
+        .side-drawer .side-nav ul li:hover {
+          background-color: #902617; }
+        .side-drawer .side-nav ul li a {
+          display: inline-block;
+          color: #fff;
+          width: 100%;
+          margin-left: 2rem; }
+          .side-drawer .side-nav ul li a i {
+            padding-right: 0.5rem; }
+        .side-drawer .side-nav ul li a:hover {
+          font-weight: bold; }
   .side-drawer .btn-close {
     background: transparent;
     border: none;

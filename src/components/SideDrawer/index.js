@@ -25,7 +25,7 @@ function index(props) {
         <Person small="true" />
 
         <nav className="side-nav">
-          <NavLinks active={"#fff"} />
+          <NavLinks active={"#fff"} background={"#902617"} />
         </nav>
       </div>
     </Fragment>

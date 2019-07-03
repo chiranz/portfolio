@@ -23,7 +23,8 @@ function Links(props) {
             onClick={() => handleClick(item.name)}
             activeStyle={{
               color: props.active,
-              fontWeight: "bold"
+              fontWeight: "bold",
+              backgroundColor: props.background
             }}
           >
             {props.isSideDrawerOpen && <i className={item.icon} />}

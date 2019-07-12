@@ -2,13 +2,15 @@ import ecommimg from "../images/ecomm.png";
 import blogimg from "../images/blog.svg";
 import portfolioimg from "../images/portfolio.png";
 
+export const GaTrackingID = "UA-143791182-1";
+
 export const person = {
   name: "Chiranjibi Poudyal",
   profession: "Full-stack developer",
 
   headline:
     "Self taught Web developer with a desire to build successful businesses in this distracted modern world.",
-  lookingFor: "Looking forward to work with an aspiring startups.",
+  lookingFor: "Looking forward to work with aspiring startups.",
   workType: "Willing to relocate or can work remotely.",
   bio: `I am a Civil Engineer turned Full-stack developer and Blockchain enthusiast. 
     I enjoy learning about technology and using it for solving critical issues.`,
@@ -23,7 +25,7 @@ export const navLinks = [
   { name: "portfolio", linkTo: "/portfolio", icon: "fa fa-briefcase" },
   { name: "my cv", linkTo: "/my-cv", icon: "fa fa-file" },
   { name: "blog", linkTo: "/blog", icon: "fa fa-rss" },
-  { name: "contact", linkTo: "/contact", icon: "fa fa-address-card" },
+  { name: "contact", linkTo: "/contact", icon: "fa fa-telegram" },
   { name: "about", linkTo: "/about", icon: "fa fa-user" }
 ];
 

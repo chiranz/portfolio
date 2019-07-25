@@ -9,7 +9,7 @@ export const person = {
   profession: "Full-stack developer",
 
   headline:
-    "Self taught Web developer with a desire to build successful businesses in this distracted modern world.",
+    "Civil Engineer turned self taught full-stack web developer working and learning to create successful businesses. ",
   lookingFor: "Looking forward to work with aspiring startups.",
   workType: "Willing to relocate or can work remotely.",
   bio: `I am a Civil Engineer turned Full-stack developer and Blockchain enthusiast. 

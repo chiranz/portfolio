@@ -1,3 +1,0 @@
-React Router
-
-match.params.<variable> gives variable value passed as arguments
